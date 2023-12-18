@@ -44,7 +44,7 @@ const Shop = () => {
         ))
       }
     </div>
-      <section className='px-10 py-20 grid grid-cols-4 gap-5'>
+      <section className='px-2 md:px-10 py-20 grid grid-cols-1 md:grid-cols-4 gap-5'>
           {
             [1,2,3,4,5].map((index)=>(
               <Card key={index} className=' cursor-pointer p-0 relative overflow-hidden hover:shadow-md'>

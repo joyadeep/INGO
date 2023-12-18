@@ -36,7 +36,7 @@ const social=[
 ]
 const Footer = () => {
   return (
-    <div className="h-fit p-10 flex gap-3 bg-black text-white">
+    <div className="h-fit p-3 md:p-10 flex gap-3 bg-black text-white">
       <div className="w-2/4">
       <p className='w-fit text-3xl font-black text-white'>Logo<span className='text-3xl text-rose-600'>.</span> </p>
         <p className="pt-2">Charity and Dontaion</p>

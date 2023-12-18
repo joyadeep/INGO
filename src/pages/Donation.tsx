@@ -27,27 +27,27 @@ const dontaionOptions=[
 const Donation = () => {
   return (
     <div className="pb-20">
-        <div className="h-[400px] bg-amber-50 flex items-center px-36 gap-28">
+        <div className=" h-fit md:h-[400px] bg-amber-50 flex items-center px-2 md:px-36 py-3 gap-28">
             <div className="w-full flex flex-col gap-4">
-                <h2 className="text-6xl font-bold"><span className="text-green-500">Charity</span> is not About <span className="text-green-500">Pity.</span> It is About <span className="text-green-500">Love.</span></h2>
-                <p className="">Empower Change: Support Our Cause and Make a Difference Through Your Generous Contributions Today!</p>
+                <h2 className="text-4xl md:text-6xl font-bold"><span className="text-green-500">Charity</span> is not About <span className="text-green-500">Pity.</span> It is About <span className="text-green-500">Love.</span></h2>
+                <p className="text-sm md:text-lg">Empower Change: Support Our Cause and Make a Difference Through Your Generous Contributions Today!</p>
                 
             </div>
-            <div className="w-full relative">
+            <div className="w-full hidden md:block relative">
                 <img src={"https://images.pexels.com/photos/1427430/pexels-photo-1427430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} className=" absolute -top-20 shadow-2xl w-80 h-80 object-cover rounded-md grayscale"   />
             </div>
         </div>
 
-        <div className="h-fit w-full pt-20 px-20 flex items-center gap-20">
+        <div className="h-fit w-full pt-20 px-3 md:px-20 flex flex-col md:flex-row items-center gap-20">
             <div className="w-full">
-                <h2 className="text-5xl font-extrabold mb-2">Ways to Donate</h2>
+                <h2 className="text-4xl md:text-5xl font-extrabold mb-2">Ways to Donate</h2>
                 <p>Donate now and help us make children's future bright.</p>
-                <Button className="w-fit mt-10" variant={'primary'}>Donate Now <Heart className="ml-3"/></Button>
+                <Button className="w-full md:w-fit mt-3 md:mt-10" variant={'primary'}>Donate Now <Heart className="ml-3"/></Button>
             </div>
             <div className="w-full flex flex-wrap gap-5 text-center">
                 {
                     dontaionOptions.map((option)=>(
-                        <div className="flex flex-col gap-2 w-60">
+                        <div className="flex flex-col gap-1 md:gap-2 w-full md:w-60">
                             <div className="mx-auto w-fit">{option.icon}</div>
                             <p className="text-lg font-semibold">{option.name}</p>
                             <p className="text-sm">{option.description}</p>
